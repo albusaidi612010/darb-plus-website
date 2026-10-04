@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" role="img" aria-labelledby="title desc">
+<title id="title">Darb Plus</title><desc id="desc">Darb Plus brand logo</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D6A45D"/><stop offset="1" stop-color="#B47B32"/></linearGradient></defs>
+<g transform="translate(4 5)"><rect x="0" y="0" width="62" height="62" rx="19" fill="#123C33"/><path d="M15 43C23 26 31 19 47 14C39 27 33 35 20 48" fill="none" stroke="url(#g)" stroke-width="5.5" stroke-linecap="round"/><path d="M42 20v15M34.5 27.5h15" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g>
+<text x="80" y="31" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#123C33">Darb</text><text x="143" y="31" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#B47B32">+</text><text x="80" y="54" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#58645F">درب بلس</text></svg>
