@@ -15,3 +15,23 @@
 .category-chips{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 18px}.quick-chip{border:1px solid rgba(18,60,51,.1);background:#fff;border-radius:16px;padding:14px 12px;display:flex;align-items:center;justify-content:center;gap:9px;color:var(--green);cursor:pointer;font-family:inherit}.quick-chip:hover{border-color:var(--gold);transform:translateY(-1px)}.quick-chip span{font-size:20px;color:var(--gold2)}.quick-chip b{font-size:13px}.travel-pattern{background:linear-gradient(145deg,#1b4d61,#8bb8c7);display:grid;place-items:center}.volunteer-pattern{background:linear-gradient(145deg,#7a4f38,#d5aa78);display:grid;place-items:center}.group-pattern{background:linear-gradient(145deg,#244a42,#85aa93);display:grid;place-items:center}.individual-pattern{background:linear-gradient(145deg,#5f4b68,#bba4bd);display:grid;place-items:center}.discount.pending{max-width:120px;text-align:center}.offer-photo .pattern-mark{font-family:"Tajawal",sans-serif}
 @media(max-width:980px){.category-chips{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.category-chips{grid-template-columns:1fr 1fr}.quick-chip{padding:12px 8px}.quick-chip b{font-size:12px}}
+
+.interests-section{background:#fff}
+.interest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.interest-card{min-height:170px;border:1px solid rgba(18,60,51,.1);border-radius:22px;padding:22px;text-align:start;background:#f9faf7;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;transition:.25s;position:relative;overflow:hidden}
+.interest-card:before{content:"";position:absolute;inset:auto -35px -55px auto;width:125px;height:125px;border-radius:50%;background:rgba(255,255,255,.2)}
+.interest-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(214,164,93,.55)}
+.interest-icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:rgba(255,255,255,.58);font-size:24px;color:var(--green);font-weight:800}
+.interest-card div{display:flex;flex-direction:column;position:relative;z-index:1}
+.interest-card strong{font-size:20px;line-height:1.2}
+.interest-card small{color:rgba(20,32,28,.66);margin-top:4px}
+.interest-travel{background:linear-gradient(145deg,#edf5f7,#cfe2e8)}
+.interest-volunteer{background:linear-gradient(145deg,#f7efe8,#ead1b5)}
+.interest-adventure{background:linear-gradient(145deg,#eef3ea,#c8d5ba)}
+.interest-family{background:linear-gradient(145deg,#fff6e8,#edd5a8)}
+.interest-friends{background:linear-gradient(145deg,#edf4ef,#c9ddd0)}
+.interest-individual{background:linear-gradient(145deg,#f5eff7,#ddcae2)}
+.interest-corporate{background:linear-gradient(145deg,#eef0ef,#c7d0cc)}
+.interest-wellness{background:linear-gradient(145deg,#eff6f0,#cde3d4)}
+@media(max-width:980px){.interest-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.interest-grid{grid-template-columns:1fr}.interest-card{min-height:145px}}
