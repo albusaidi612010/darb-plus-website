@@ -51,6 +51,25 @@ document.querySelectorAll('.quick-chip').forEach(btn=>btn.addEventListener('clic
 }));
 resetFilters?.addEventListener('click',()=>{searchInput.value='';locationFilter.value='all';categoryFilter.value='all';discountFilter.value='0';filterOffers();});
 
+document.querySelectorAll('.interest-card').forEach(card=>card.addEventListener('click',()=>{
+  if(card.dataset.interestTarget==='corporate'){
+    document.getElementById('corporate')?.scrollIntoView({behavior:'smooth',block:'start'});
+    return;
+  }
+  searchInput.value='';
+  locationFilter.value='all';
+  discountFilter.value='0';
+  if(card.dataset.interestCategory){
+    categoryFilter.value=card.dataset.interestCategory;
+  }else{
+    categoryFilter.value='all';
+    const q=lang==='ar'?card.dataset.interestSearchAr:card.dataset.interestSearchEn;
+    searchInput.value=q||'';
+  }
+  filterOffers();
+  document.getElementById('offers')?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+
 const form=document.getElementById('companyForm');
 const status=document.getElementById('formStatus');
 form?.addEventListener('submit',e=>{e.preventDefault();status.textContent=lang==='ar'?'تم استلام النموذج تجريبيًا. سيتم ربطه بالبريد قبل الإطلاق التجاري.':'Demo form received. It will be connected to email before commercial launch.';});
