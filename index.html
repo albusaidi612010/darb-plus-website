@@ -45,7 +45,7 @@
         <div class="hero-copy">
           <div class="pill" data-ar="اكتشف • جرّب • وفّر" data-en="Discover • Experience • Save">اكتشف • جرّب • وفّر</div>
           <h1><span data-ar="تجارب عُمان الحقيقية." data-en="Authentic Oman experiences.">تجارب عُمان الحقيقية.</span><br><em data-ar="بمزايا أكثر." data-en="With more benefits.">بمزايا أكثر.</em></h1>
-          <p data-ar="من الجبال والأودية إلى البحر والصحراء — درب بلس يجمع تجارب واقعية في عُمان مع مزايا حصرية لموظفي المؤسسات." data-en="From mountains and wadis to sea and desert, Darb+ brings authentic Oman experiences together with exclusive employee benefits.">من الجبال والأودية إلى البحر والصحراء — درب بلس يجمع تجارب واقعية في عُمان مع مزايا حصرية لموظفي المؤسسات.</p>
+          <p data-ar="من الجبال والأودية إلى البحر والسفر والعمل التطوعي والفعاليات الجماعية والفردية — درب بلس يجمع التجارب والمزايا في منصة واحدة." data-en="From mountains and sea to travel, volunteering, group and individual activities, Darb+ brings experiences and benefits together in one platform.">من الجبال والأودية إلى البحر والسفر والعمل التطوعي والفعاليات الجماعية والفردية — درب بلس يجمع التجارب والمزايا في منصة واحدة.</p>
           <div class="hero-actions">
             <a class="button gold" href="#offers" data-ar="شاهد العروض" data-en="View offers">شاهد العروض</a>
             <a class="button glass" href="#corporate" data-ar="حلول المؤسسات" data-en="Corporate solutions">حلول المؤسسات</a>
@@ -112,6 +112,10 @@
               <option value="sea" data-ar="بحر" data-en="Sea">بحر</option>
               <option value="stay" data-ar="إقامة" data-en="Stay">إقامة</option>
               <option value="lifestyle" data-ar="نمط حياة" data-en="Lifestyle">نمط حياة</option>
+              <option value="flights" data-ar="طيران وسفر" data-en="Flights & Travel">طيران وسفر</option>
+              <option value="volunteering" data-ar="عمل تطوعي" data-en="Volunteering">عمل تطوعي</option>
+              <option value="group" data-ar="فعاليات جماعية" data-en="Group Activities">فعاليات جماعية</option>
+              <option value="individual" data-ar="فعاليات فردية" data-en="Individual Activities">فعاليات فردية</option>
             </select>
           </div>
           <div class="search-field">
@@ -126,7 +130,14 @@
           <button class="reset-btn" id="resetFilters" data-ar="إعادة ضبط" data-en="Reset">إعادة ضبط</button>
         </div>
 
-        <div class="results-head"><span id="resultsCount">6 عروض</span></div>
+        <div class="category-chips" aria-label="تصنيفات إضافية">
+          <button class="quick-chip" data-quick-category="flights"><span>✈</span><b data-ar="طيران وسفر" data-en="Flights & Travel">طيران وسفر</b></button>
+          <button class="quick-chip" data-quick-category="volunteering"><span>♡</span><b data-ar="عمل تطوعي" data-en="Volunteering">عمل تطوعي</b></button>
+          <button class="quick-chip" data-quick-category="group"><span>◉◉</span><b data-ar="فعاليات جماعية" data-en="Group Activities">فعاليات جماعية</b></button>
+          <button class="quick-chip" data-quick-category="individual"><span>◎</span><b data-ar="فعاليات فردية" data-en="Individual Activities">فعاليات فردية</b></button>
+        </div>
+
+        <div class="results-head"><span id="resultsCount">10 عروض</span></div>
 
         <div class="offer-grid" id="offerGrid">
           <article class="offer visual-offer" data-category="adventure" data-location="dakhiliyah" data-discount="25" data-search-ar="هايكنج الجبل الأخضر جبال الداخلية" data-search-en="hiking jebel akhdar mountains dakhiliyah">
@@ -158,6 +169,27 @@
             <div class="offer-photo dhofar-photo"><div class="pattern-mark">ظفار</div><span class="discount">25%</span></div>
             <div class="offer-body"><span class="offer-type" data-ar="طبيعة · ظفار" data-en="Nature · Dhofar">طبيعة · ظفار</span><h3 data-ar="تجارب خريف ظفار" data-en="Dhofar Khareef Experiences">تجارب خريف ظفار</h3><p data-ar="مسارات ومواقع طبيعية موسمية في محافظة ظفار." data-en="Seasonal trails and natural locations across Dhofar.">مسارات ومواقع طبيعية موسمية في محافظة ظفار.</p></div>
           </article>
+
+          <article class="offer visual-offer" data-category="flights" data-location="all" data-discount="0" data-search-ar="طيران سفر تذاكر رحلات جوية عمان خصومات مؤسسات" data-search-en="flights travel airfare tickets oman corporate discounts">
+            <div class="offer-photo travel-pattern"><div class="pattern-mark">✈</div><span class="discount pending" data-ar="خصم خاص" data-en="Special rate">خصم خاص</span></div>
+            <div class="offer-body"><span class="offer-type" data-ar="سفر · لجميع الوجهات" data-en="Travel · Multiple destinations">سفر · لجميع الوجهات</span><h3 data-ar="عروض الطيران والسفر" data-en="Flight & Travel Offers">عروض الطيران والسفر</h3><p data-ar="خصومات وأسعار مؤسسية على تذاكر السفر عند اعتماد الشراكات مع شركات الطيران ووكالات السفر." data-en="Corporate fares and travel discounts once airline and travel-agency partnerships are confirmed.">خصومات وأسعار مؤسسية على تذاكر السفر عند اعتماد الشراكات مع شركات الطيران ووكالات السفر.</p></div>
+          </article>
+
+          <article class="offer visual-offer" data-category="volunteering" data-location="all" data-discount="0" data-search-ar="تطوع عمل تطوعي تنظيف شواطئ تشجير مجتمع مبادرات" data-search-en="volunteering community beach cleanup tree planting initiatives">
+            <div class="offer-photo volunteer-pattern"><div class="pattern-mark">♡</div><span class="discount pending" data-ar="مشاركة" data-en="Participate">مشاركة</span></div>
+            <div class="offer-body"><span class="offer-type" data-ar="مجتمع · عُمان" data-en="Community · Oman">مجتمع · عُمان</span><h3 data-ar="فرص العمل التطوعي" data-en="Volunteering Opportunities">فرص العمل التطوعي</h3><p data-ar="مساحة لفعاليات تنظيف الشواطئ والتشجير والمبادرات الاجتماعية بالتعاون مع الجهات المنظمة." data-en="A space for beach cleanups, tree planting and community initiatives with organizing partners.">مساحة لفعاليات تنظيف الشواطئ والتشجير والمبادرات الاجتماعية بالتعاون مع الجهات المنظمة.</p></div>
+          </article>
+
+          <article class="offer visual-offer" data-category="group" data-location="all" data-discount="0" data-search-ar="فعاليات جماعية فرق شركات تيم بيلدنج تحديات مسابقات مجموعات" data-search-en="group activities teams companies team building challenges competitions">
+            <div class="offer-photo group-pattern"><div class="pattern-mark">◉◉</div><span class="discount pending" data-ar="للمجموعات" data-en="For groups">للمجموعات</span></div>
+            <div class="offer-body"><span class="offer-type" data-ar="مجموعات · مؤسسات" data-en="Groups · Organizations">مجموعات · مؤسسات</span><h3 data-ar="فعاليات جماعية وبناء فرق" data-en="Group & Team-Building Activities">فعاليات جماعية وبناء فرق</h3><p data-ar="أنشطة تنافسية وترفيهية للموظفين والفرق مثل التحديات، الألعاب الجماعية والرحلات المنظمة." data-en="Competitive and recreational activities for employees and teams, including challenges, group games and organized outings.">أنشطة تنافسية وترفيهية للموظفين والفرق مثل التحديات، الألعاب الجماعية والرحلات المنظمة.</p></div>
+          </article>
+
+          <article class="offer visual-offer" data-category="individual" data-location="all" data-discount="0" data-search-ar="فعاليات فردية ورش دورات لياقة هوايات تصوير فن طبخ" data-search-en="individual activities workshops courses fitness hobbies photography art cooking">
+            <div class="offer-photo individual-pattern"><div class="pattern-mark">◎</div><span class="discount pending" data-ar="للأفراد" data-en="For individuals">للأفراد</span></div>
+            <div class="offer-body"><span class="offer-type" data-ar="فردي · اهتمامات متنوعة" data-en="Individual · Multiple interests">فردي · اهتمامات متنوعة</span><h3 data-ar="فعاليات وتجارب فردية" data-en="Individual Activities & Experiences">فعاليات وتجارب فردية</h3><p data-ar="ورش وهوايات وتجارب شخصية تشمل اللياقة والتصوير والفنون والطبخ وغيرها." data-en="Workshops, hobbies and personal experiences spanning fitness, photography, arts, cooking and more.">ورش وهوايات وتجارب شخصية تشمل اللياقة والتصوير والفنون والطبخ وغيرها.</p></div>
+          </article>
+
         </div>
         <div class="no-results hidden" id="noResults" data-ar="لا توجد عروض مطابقة لهذه الفلاتر." data-en="No offers match these filters.">لا توجد عروض مطابقة لهذه الفلاتر.</div>
       </div>
