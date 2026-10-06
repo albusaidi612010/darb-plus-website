@@ -44,6 +44,11 @@ function filterOffers(){
   noResults?.classList.toggle('hidden',visible!==0);
 }
 [searchInput,locationFilter,categoryFilter,discountFilter].forEach(el=>el?.addEventListener('input',filterOffers));
+document.querySelectorAll('.quick-chip').forEach(btn=>btn.addEventListener('click',()=>{
+  categoryFilter.value=btn.dataset.quickCategory;
+  filterOffers();
+  document.getElementById('offers')?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
 resetFilters?.addEventListener('click',()=>{searchInput.value='';locationFilter.value='all';categoryFilter.value='all';discountFilter.value='0';filterOffers();});
 
 const form=document.getElementById('companyForm');
