@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>استمارة الاهتمامات والمقترحات | درب بلس</title>
+  <meta name="description" content="شارك اهتماماتك ومقترحاتك مع درب بلس.">
+  <meta name="theme-color" content="#123C33">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="survey-page">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Darb+"></a>
+      <div class="nav-links survey-nav">
+        <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="index.html#interests" data-ar="حسب اهتمامك" data-en="Interests">حسب اهتمامك</a>
+        <a href="index.html#offers" data-ar="العروض" data-en="Offers">العروض</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Change language"><span id="langLabel">EN</span></button>
+        <a class="button small" href="index.html" data-ar="العودة للموقع" data-en="Back to site">العودة للموقع</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="survey-page-hero">
+    <div class="container">
+      <a class="survey-back" href="index.html">← <span data-ar="العودة إلى درب بلس" data-en="Back to Darb+">العودة إلى درب بلس</span></a>
+    </div>
+  </div>
+
+    <section class="section survey-section" id="survey">
+      <div class="container">
+        <div class="survey-shell">
+          <div class="survey-intro">
+            <span class="kicker" data-ar="ساعدنا نفهمك أكثر" data-en="Help us understand you better">ساعدنا نفهمك أكثر</span>
+            <h2 data-ar="استمارة الاهتمامات والمقترحات" data-en="Interests & Suggestions Form">استمارة الاهتمامات والمقترحات</h2>
+            <p data-ar="إجاباتك تساعد درب بلس على اختيار عروض وفعاليات أقرب لاهتمامات المجتمع والموظفين." data-en="Your answers help Darb+ select offers and activities that better match the interests of people and employees.">إجاباتك تساعد درب بلس على اختيار عروض وفعاليات أقرب لاهتمامات المجتمع والموظفين.</p>
+            <div class="survey-note">
+              <span>✓</span>
+              <p data-ar="تصل الاستمارة إلى بريد درب بلس المخصص للاستبيان، ولن نطلب بيانات حساسة." data-en="The form is sent to the Darb+ survey email. We do not ask for sensitive personal information.">تصل الاستمارة إلى بريد درب بلس المخصص للاستبيان، ولن نطلب بيانات حساسة.</p>
+            </div>
+          </div>
+
+          <form class="survey-form" id="interestForm" action="https://formsubmit.co/abade612011@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Darb+ | New Interests Survey">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://albusaidi612010.github.io/darb-plus-website/survey.html?submitted=1#survey">
+            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+
+            <div class="survey-group">
+              <div class="survey-group-head"><span>01</span><div><h3 data-ar="الهوايات والاهتمامات" data-en="Hobbies & Interests">الهوايات والاهتمامات</h3><p data-ar="اختر كل ما ينطبق عليك" data-en="Choose all that apply">اختر كل ما ينطبق عليك</p></div></div>
+              <div class="choice-grid">
+                <label class="choice"><input type="checkbox" name="interests[]" value="Sports"><span data-ar="الرياضة" data-en="Sports">الرياضة</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Travel"><span data-ar="السفر" data-en="Travel">السفر</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Adventure"><span data-ar="المغامرات" data-en="Adventure">المغامرات</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Photography"><span data-ar="التصوير" data-en="Photography">التصوير</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Reading"><span data-ar="القراءة" data-en="Reading">القراءة</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Technology"><span data-ar="التقنية" data-en="Technology">التقنية</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Volunteering"><span data-ar="التطوع" data-en="Volunteering">التطوع</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Arts"><span data-ar="الفنون" data-en="Arts">الفنون</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Sea Activities"><span data-ar="الأنشطة البحرية" data-en="Sea activities">الأنشطة البحرية</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Camping"><span data-ar="التخييم" data-en="Camping">التخييم</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Food & Cafes"><span data-ar="المطاعم والمقاهي" data-en="Food & cafés">المطاعم والمقاهي</span></label>
+                <label class="choice"><input type="checkbox" name="interests[]" value="Wellness"><span data-ar="الصحة واللياقة" data-en="Wellness & fitness">الصحة واللياقة</span></label>
+              </div>
+              <label class="survey-field full"><span data-ar="اهتمامات أخرى" data-en="Other interests">اهتمامات أخرى</span><input type="text" name="other_interests" placeholder="..." data-placeholder-ar="اكتب أي هواية أو اهتمام آخر" data-placeholder-en="Add another hobby or interest"></label>
+            </div>
+
+            <div class="survey-group">
+              <div class="survey-group-head"><span>02</span><div><h3 data-ar="الفعاليات التي تفضلها" data-en="Preferred activities">الفعاليات التي تفضلها</h3><p data-ar="يمكن اختيار أكثر من نوع" data-en="You may choose more than one">يمكن اختيار أكثر من نوع</p></div></div>
+              <div class="choice-grid compact">
+                <label class="choice"><input type="checkbox" name="preferred_activities[]" value="Individual"><span data-ar="فردية" data-en="Individual">فردية</span></label>
+                <label class="choice"><input type="checkbox" name="preferred_activities[]" value="Group"><span data-ar="جماعية" data-en="Group">جماعية</span></label>
+                <label class="choice"><input type="checkbox" name="preferred_activities[]" value="Family"><span data-ar="عائلية" data-en="Family">عائلية</span></label>
+                <label class="choice"><input type="checkbox" name="preferred_activities[]" value="Professional"><span data-ar="مهنية" data-en="Professional">مهنية</span></label>
+                <label class="choice"><input type="checkbox" name="preferred_activities[]" value="Volunteering"><span data-ar="تطوعية" data-en="Volunteering">تطوعية</span></label>
+                <label class="choice"><input type="checkbox" name="preferred_activities[]" value="Entertainment"><span data-ar="ترفيهية" data-en="Entertainment">ترفيهية</span></label>
+              </div>
+            </div>
+
+            <div class="survey-group">
+              <div class="survey-group-head"><span>03</span><div><h3 data-ar="معلومات عامة" data-en="General information">معلومات عامة</h3><p data-ar="لتحليل الاهتمامات بشكل أفضل" data-en="To better understand preferences">لتحليل الاهتمامات بشكل أفضل</p></div></div>
+              <div class="survey-fields">
+                <label class="survey-field"><span data-ar="الاسم" data-en="Name">الاسم</span><input type="text" name="name" required data-placeholder-ar="اكتب الاسم" data-placeholder-en="Enter your name"></label>
+                <label class="survey-field"><span data-ar="القبيلة" data-en="Tribe">القبيلة</span><input type="text" name="tribe" required data-placeholder-ar="اكتب القبيلة" data-placeholder-en="Enter your tribe"></label>
+                <label class="survey-field"><span data-ar="الفئة العمرية" data-en="Age group">الفئة العمرية</span><select name="age_group" required>
+                  <option value="" disabled selected data-ar="اختر الفئة" data-en="Select age group">اختر الفئة</option>
+                  <option value="Under 18" data-ar="أقل من 18" data-en="Under 18">أقل من 18</option>
+                  <option value="18-24">18–24</option>
+                  <option value="25-34">25–34</option>
+                  <option value="35-44">35–44</option>
+                  <option value="45-54">45–54</option>
+                  <option value="55+">55+</option>
+                </select></label>
+                <label class="survey-field"><span data-ar="الوظيفة / المجال" data-en="Job / field">الوظيفة / المجال</span><input type="text" name="job" required data-placeholder-ar="مثال: تقنية معلومات" data-placeholder-en="e.g. Information Technology"></label>
+                <label class="survey-field"><span data-ar="جهة العمل" data-en="Employer">جهة العمل</span><input type="text" name="employer" data-placeholder-ar="اختياري" data-placeholder-en="Optional"></label>
+                <label class="survey-field"><span data-ar="المحافظة" data-en="Governorate">المحافظة</span><select name="governorate">
+                  <option value="" data-ar="اختر المحافظة" data-en="Select governorate">اختر المحافظة</option>
+                  <option value="Muscat" data-ar="مسقط" data-en="Muscat">مسقط</option>
+                  <option value="Dhofar" data-ar="ظفار" data-en="Dhofar">ظفار</option>
+                  <option value="Al Dakhiliyah" data-ar="الداخلية" data-en="Al Dakhiliyah">الداخلية</option>
+                  <option value="North Al Batinah" data-ar="شمال الباطنة" data-en="North Al Batinah">شمال الباطنة</option>
+                  <option value="South Al Batinah" data-ar="جنوب الباطنة" data-en="South Al Batinah">جنوب الباطنة</option>
+                  <option value="North Al Sharqiyah" data-ar="شمال الشرقية" data-en="North Al Sharqiyah">شمال الشرقية</option>
+                  <option value="South Al Sharqiyah" data-ar="جنوب الشرقية" data-en="South Al Sharqiyah">جنوب الشرقية</option>
+                  <option value="Al Dhahirah" data-ar="الظاهرة" data-en="Al Dhahirah">الظاهرة</option>
+                  <option value="Al Buraimi" data-ar="البريمي" data-en="Al Buraimi">البريمي</option>
+                  <option value="Al Wusta" data-ar="الوسطى" data-en="Al Wusta">الوسطى</option>
+                  <option value="Musandam" data-ar="مسندم" data-en="Musandam">مسندم</option>
+                </select></label>
+              </div>
+            </div>
+
+            <div class="survey-group">
+              <div class="survey-group-head"><span>04</span><div><h3 data-ar="مقترحاتك" data-en="Your suggestions">مقترحاتك</h3><p data-ar="ما الذي تريد أن تراه في درب بلس؟" data-en="What would you like to see on Darb+?">ما الذي تريد أن تراه في درب بلس؟</p></div></div>
+              <label class="survey-field full"><span data-ar="أنشطة أو عروض ترغب بإضافتها" data-en="Activities or offers you would like added">أنشطة أو عروض ترغب بإضافتها</span><textarea name="requested_offers" rows="4" data-placeholder-ar="مثال: عروض طيران، فعاليات رياضية، دورات..." data-placeholder-en="e.g. flights, sports events, workshops..."></textarea></label>
+              <label class="survey-field full"><span data-ar="اقتراحات أخرى لتطوير درب بلس" data-en="Other suggestions for Darb+">اقتراحات أخرى لتطوير درب بلس</span><textarea name="suggestions" rows="4" data-placeholder-ar="شاركنا فكرتك..." data-placeholder-en="Share your idea..."></textarea></label>
+            </div>
+
+            <div class="survey-group survey-contact">
+              <div class="survey-fields">
+                <label class="survey-field"><span data-ar="الاسم" data-en="Name">الاسم</span><input type="text" name="name" data-placeholder-ar="اختياري" data-placeholder-en="Optional"></label>
+                <label class="survey-field"><span data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</span><input type="email" name="email" data-placeholder-ar="اختياري، إذا رغبت بالتواصل معك" data-placeholder-en="Optional, if you want us to contact you"></label>
+              </div>
+              <label class="consent"><input type="checkbox" name="consent" value="Yes" required><span data-ar="أوافق على إرسال هذه البيانات إلى درب بلس لاستخدامها في تحليل الاهتمامات وتحسين العروض والفعاليات، وفق سياسة الخصوصية." data-en="I consent to sending this information to Darb+ for interest analysis and improving offers and activities, in accordance with the privacy policy.">أوافق على إرسال هذه البيانات إلى درب بلس لاستخدامها في تحليل الاهتمامات وتحسين العروض والفعاليات، وفق سياسة الخصوصية.</span></label>
+              <button class="button full survey-submit" type="submit" data-ar="إرسال الاستمارة" data-en="Submit form">إرسال الاستمارة</button>
+              <p class="survey-disclaimer" data-ar="ملاحظة: عند أول استخدام لخدمة الإرسال قد يصلك بريد تفعيل إلى البريد المستلم، ويجب تأكيده مرة واحدة فقط." data-en="Note: On first use, the receiving email may get a one-time activation message that must be confirmed.">ملاحظة: عند أول استخدام لخدمة الإرسال قد يصلك بريد تفعيل إلى البريد المستلم، ويجب تأكيده مرة واحدة فقط.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  <footer class="footer survey-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/logo.svg" alt="Darb+"><p data-ar="منصة عُمانية للمزايا والتجارب." data-en="An Omani platform for benefits and experiences.">منصة عُمانية للمزايا والتجارب.</p></div>
+      <div><h4 data-ar="درب بلس" data-en="Darb+">درب بلس</h4><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></div>
+      <div><h4 data-ar="قانوني" data-en="Legal">قانوني</h4><a href="privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy">سياسة الخصوصية</a></div>
+      <div><h4 data-ar="عُمان" data-en="Oman">عُمان</h4><span>© <span id="year"></span> Darb+</span></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
