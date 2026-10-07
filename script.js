@@ -40,7 +40,7 @@ function filterOffers(){
     card.classList.toggle('hidden',!ok);
     if(ok) visible++;
   });
-  resultsCount.textContent=lang==='ar'?visible+' عروض':visible+' offers';
+  if(resultsCount) resultsCount.textContent=lang==='ar'?visible+' عروض':visible+' offers';
   noResults?.classList.toggle('hidden',visible!==0);
 }
 [searchInput,locationFilter,categoryFilter,discountFilter].forEach(el=>el?.addEventListener('input',filterOffers));
@@ -56,8 +56,8 @@ document.querySelectorAll('.interest-card').forEach(card=>card.addEventListener(
     document.getElementById('corporate')?.scrollIntoView({behavior:'smooth',block:'start'});
     return;
   }
-  if(card.dataset.interestTarget==='survey'){
-    document.getElementById('survey')?.scrollIntoView({behavior:'smooth',block:'start'});
+  if(card.dataset.interestTarget==='survey-page'){
+    window.location.href='survey.html';
     return;
   }
   searchInput.value='';
@@ -77,7 +77,7 @@ document.querySelectorAll('.interest-card').forEach(card=>card.addEventListener(
 const form=document.getElementById('companyForm');
 const status=document.getElementById('formStatus');
 form?.addEventListener('submit',e=>{e.preventDefault();status.textContent=lang==='ar'?'تم استلام النموذج تجريبيًا. سيتم ربطه بالبريد قبل الإطلاق التجاري.':'Demo form received. It will be connected to email before commercial launch.';});
-document.getElementById('year').textContent=new Date().getFullYear();
+const yearEl=document.getElementById('year'); if(yearEl) yearEl.textContent=new Date().getFullYear();
 applyLanguage();
 const params=new URLSearchParams(window.location.search);
 if(params.get('submitted')==='1'){
