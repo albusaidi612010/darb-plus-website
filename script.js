@@ -56,6 +56,10 @@ document.querySelectorAll('.interest-card').forEach(card=>card.addEventListener(
     document.getElementById('corporate')?.scrollIntoView({behavior:'smooth',block:'start'});
     return;
   }
+  if(card.dataset.interestTarget==='survey'){
+    document.getElementById('survey')?.scrollIntoView({behavior:'smooth',block:'start'});
+    return;
+  }
   searchInput.value='';
   locationFilter.value='all';
   discountFilter.value='0';
@@ -75,3 +79,13 @@ const status=document.getElementById('formStatus');
 form?.addEventListener('submit',e=>{e.preventDefault();status.textContent=lang==='ar'?'تم استلام النموذج تجريبيًا. سيتم ربطه بالبريد قبل الإطلاق التجاري.':'Demo form received. It will be connected to email before commercial launch.';});
 document.getElementById('year').textContent=new Date().getFullYear();
 applyLanguage();
+const params=new URLSearchParams(window.location.search);
+if(params.get('submitted')==='1'){
+  const form=document.getElementById('interestForm');
+  if(form){
+    const msg=document.createElement('div');
+    msg.className='survey-success';
+    msg.textContent=lang==='ar'?'شكرًا لك، تم إرسال الاستمارة بنجاح.':'Thank you. Your form was submitted successfully.';
+    form.prepend(msg);
+  }
+}
